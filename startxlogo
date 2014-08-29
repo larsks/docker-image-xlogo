@@ -1,0 +1,5 @@
+#!/bin/sh
+
+xauth add $XAUTH_CREDS
+exec xlogo
+

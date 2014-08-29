@@ -7,7 +7,7 @@ You can find your `xauth` credentials by running `xauth list`:
 
 And then run:
 
-    docker run -e XAUTH_CREDS="myhostname/unix:0  MIT-MAGIC-COOKIE-1  f0f9e41b11c4e1874c0ff1357300a5f9" -e DISPLAY=:0 --net host xlogo
+    docker run -e XAUTH_CREDS="myhostname/unix:0  MIT-MAGIC-COOKIE-1  f0f9e41b11c4e1874c0ff1357300a5f9" -e DISPLAY=:0 --net host larsks/xlogo
 
 Notice that `--net host`, this is critical for access to the X display
 to work correctly.  This runs the container in the host's global
